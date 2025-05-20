@@ -79,7 +79,7 @@ namespace Bongo.DataAccess.Tests
             {
                 context.Database.EnsureDeleted();
                 var repository = new StudyRoomBookingRepository(context);
-                //repository.Book(studyRoomBooking_One);
+                repository.Book(studyRoomBooking_One);
                 repository.Book(studyRoomBooking_Two);
             }
 
